@@ -1,0 +1,319 @@
+/* =========================================
+   CSSBase Styles
+   ========================================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+h1, h2, h3, h4 {
+    margin-bottom: 0.5rem;
+    color: #111;
+}
+
+p, ul {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #004494;
+    text-decoration: none;
+}
+
+.btn-full {
+    display: block;
+    width: 100%;
+}
+
+.category {
+    display: inline-block;
+    background-color: #e2e8f0;
+    color: #475569;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+/* =========================================
+   Header &Navigation
+   ========================================= */
+.site-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.branding p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.main-nav a {
+    font-weight: bold;
+    color: #333;
+}
+
+/* =========================================
+   MainContent
+   ========================================= */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero-content {
+    margin-bottom: 2rem;
+}
+
+/* Upcoming Events Grid */
+.upcoming-events {
+    margin-bottom: 3rem;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.event-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.card-content time, .card-content .location {
+    font-size: 0.9rem;
+    color: #555;
+    display: block;
+}
+
+.card-content .desc {
+    margin-top: 1rem;
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* =========================================
+   Event Details Page
+   ========================================= */
+.event-intro {
+    margin-bottom: 2rem;
+}
+
+.event-intro figure {
+    margin: 1rem 0;
+}
+
+.event-intro figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.intro-desc {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Main vs Sidebar */
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-list li {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.event-sidebar {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    align-self: start;
+}
+
+/* Related Events (Flexbox) */
+.related-events-section {
+    border-top: 2px solid #ddd;
+    padding-top: 2rem;
+}
+
+.related-events {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.compact-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1 1 300px;
+}
+
+.compact-card img {
+    height: 120px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+/* =========================================
+   Footer
+   ========================================= */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+.site-footer a {
+    color: #93c5fd;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* =========================================
+   Media Queries
+   ========================================= */
+
+
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .layout-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .events-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    
+    .featured-card {
+        grid-column: span 2;
+    }
+}
