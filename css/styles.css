@@ -1,6 +1,4 @@
-/* =========================================
-   CSSBase Styles
-   ========================================= */
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -74,9 +72,7 @@ ul {
     margin-bottom: 0.5rem;
 }
 
-/* =========================================
-   Header &Navigation
-   ========================================= */
+
 .site-header {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
@@ -113,9 +109,8 @@ ul {
     color: #333;
 }
 
-/* =========================================
-   MainContent
-   ========================================= */
+
+  
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -131,7 +126,7 @@ main {
     margin-bottom: 2rem;
 }
 
-/* Upcoming Events Grid */
+
 .upcoming-events {
     margin-bottom: 3rem;
 }
@@ -180,9 +175,7 @@ main {
     border: 1px solid #ddd;
 }
 
-/* =========================================
-   Event Details Page
-   ========================================= */
+
 .event-intro {
     margin-bottom: 2rem;
 }
@@ -203,7 +196,7 @@ main {
     color: #444;
 }
 
-/* Main vs Sidebar */
+
 .layout-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -230,7 +223,7 @@ main {
     align-self: start;
 }
 
-/* Related Events (Flexbox) */
+
 .related-events-section {
     border-top: 2px solid #ddd;
     padding-top: 2rem;
@@ -259,9 +252,7 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* =========================================
-   Footer
-   ========================================= */
+
 .site-footer {
     background-color: #333;
     color: #fff;
@@ -286,9 +277,6 @@ main {
     gap: 1.5rem;
 }
 
-/* =========================================
-   Media Queries
-   ========================================= */
 
 
 @media (min-width: 768px) {
@@ -306,14 +294,84 @@ main {
     }
 }
 
-
 @media (min-width: 1024px) {
     .events-grid {
         grid-template-columns: repeat(3, 1fr);
     }
     
-    
     .featured-card {
         grid-column: span 2;
     }
+}
+
+
+.btn-save {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}
+
+
+.btn-save.remove {
+    background-color: #dc3545;
+}
+
+.btn-save.remove:hover {
+    background-color: #c82333;
+}
+
+
+.event-card.saved-event {
+    border: 2px solid #28a745;
+    background-color: #f0fdf4;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
+}
+
+
+.saved-events-section {
+    background-color: #e9ecef;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.saved-events-list {
+    list-style: none;
+    padding: 0;
+}
+
+.saved-events-list li {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    border-left: 5px solid #28a745;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.saved-events-list h4 {
+    margin: 0 0 0.5rem 0;
+    color: #28a745;
+}
+
+.saved-events-list p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.empty-message {
+    font-style: italic;
+    color: #6c757d;
 }

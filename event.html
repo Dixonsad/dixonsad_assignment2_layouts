@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annual Fall Hackathon - UNCG Event Guide</title>
+    <title>University of North Carolina At Greensboro Event Guide</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -16,8 +17,8 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#upcoming-events">Upcoming Events</a></li>
-                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="#upcoming-events">Upcoming Events</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="event.html">Featured Event</a></li>
                 </ul>
             </nav>
@@ -25,78 +26,103 @@
     </header>
 
     <main>
-        <article class="event-details">
-            <header class="event-intro">
-                <span class="category">Technology</span>
-                <h2>Annual Fall Hackathon</h2>
-                <figure>
-                    <img src="images/event6.jpeg" alt="Large crowd of students working on laptops at the hackathon">
-                    <figcaption>Students collaborating during last year's 48-hour event.</figcaption>
-                </figure>
-                <p class="intro-desc">Join 500+ students for our biggest tech event of the year. Build innovative software, meet industry mentors, and compete for over $10,000 in prizes!</p>
-            </header>
-
-            <div class="layout-grid">
-                <div class="main-content">
-                    <h3>About the Event</h3>
-                    <p>The Annual Fall Hackathon is a 48-hour invention marathon where students come together to build creative software and hardware projects. Whether you're a seasoned developer or writing your first line of code, there is a place for you here.</p>
-                    
-                    <h3>What to Expect</h3>
-                    <p>Attendees can expect a fast-paced environment fueled by free food, caffeine, and collaboration. Mentors from top tech companies will be roaming the floor to help you debug and brainstorm.</p>
-                    
-                    <h3>Agenda</h3>
-                    <ul>
-                        <li><strong>Friday 5:00 PM:</strong> Registration & Team Formation</li>
-                        <li><strong>Friday 7:00 PM:</strong> Opening Ceremony & Hacking Begins</li>
-                        <li><strong>Saturday 12:00 PM:</strong> Workshop: Intro to APIs</li>
-                        <li><strong>Sunday 12:00 PM:</strong> Hacking Ends, Judging Begins</li>
-                        <li><strong>Sunday 3:00 PM:</strong> Awards Ceremony</li>
-                    </ul>
-
-                    <h3>Accessibility & Participation</h3>
-                    <p>The Engineering Building is fully wheelchair accessible. Quiet rooms will be available on the second floor. If you require ASL interpretation or have dietary restrictions, please note them on your registration form.</p>
-                </div>
-
-                <aside class="event-sidebar">
-                    <h3>Event Details</h3>
-                    <ul class="sidebar-list">
-                        <li><strong>Date:</strong> Sept 25 - Sept 27, 2026</li>
-                        <li><strong>Time:</strong> Starts at 5:00 PM</li>
-                        <li><strong>Location:</strong> Engineering Building, Room 101</li>
-                        <li><strong>Organizer:</strong> UNCG Computer Science Club</li>
-                        <li><strong>Admission:</strong> Free for UNCG Students</li>
-                    </ul>
-                    <a href="#" class="btn btn-full">Register Now</a>
-                </aside>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Get Involved on Campus</h2>
+                <p>From hackathons to cultural festivals, find out what's happening at UNCG University this week. Don't miss out on the college experience.</p>
+                <a href="#upcoming-events" class="btn">View Upcoming Events</a>
             </div>
-        </article>
+            <figure class="hero-image">
+                <img src="images/quad.webp" alt="Students gathering on the university quad">
+            </figure>
+        </section>
 
-        <section class="related-events-section">
-            <h2>Related Events</h2>
-            <div class="related-events">
-                <div class="compact-card">
-                    <img src="images/event4.jpg" alt="Resume workshop">
-                    <h4>Tech Resume Review</h4>
-                    <time datetime="2026-09-22T15:00">Sept 22, 3:00 PM</time>
-                </div>
-                <div class="compact-card">
-                    <img src="images/event7.jpeg" alt="Networking mixer">
-                    <h4>Alumni Mixer</h4>
-                    <time datetime="2026-09-26T18:00">Sept 26, 6:00 PM</time>
-                </div>
-                <div class="compact-card">
-                    <img src="images/techtalk.png" alt="Tech talk">
-                    <h4>AI in the Workplace Talk</h4>
-                    <time datetime="2026-09-30T17:00">Sept 30, 5:00 PM</time>
-                </div>
+        <section id="upcoming-events" class="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <!-- Card 1 -->
+                <article class="event-card featured-card">
+                    <img src="images/event1.jpg" alt="Students coding at laptops">
+                    <div class="card-content">
+                        <span class="category">Technology</span>
+                        <h3>Annual Fall Hackathon</h3>
+                        <time datetime="2026-09-25T17:00">Sept 25, 2026 - 5:00 PM</time>
+                        <p class="location">Engineering Building, Room 101</p>
+                        <p class="desc">Join us for a 48-hour coding marathon. Build projects, meet tech recruiters, and win prizes!</p>
+                        <a href="event.html" class="btn-link">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="event-card">
+                    <img src="images/Event2.jpg" alt="Live music performance">
+                    <div class="card-content">
+                        <span class="category">Arts & Culture</span>
+                        <h3>Quad Concert Series</h3>
+                        <time datetime="2026-09-28T19:00">Sept 28, 2026 - 7:00 PM</time>
+                        <p class="location">Main Campus Quad</p>
+                        <p class="desc">Enjoy live music from local bands and student performers under the stars.</p>
+                        <a href="event.html" class="btn-link">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="event-card">
+                    <img src="images/event3.jpeg" alt="Students picking up trash in a park">
+                    <div class="card-content">
+                        <span class="category">Volunteer</span>
+                        <h3>Community Park Cleanup</h3>
+                        <time datetime="2026-10-02T09:00">Oct 2, 2026 - 9:00 AM</time>
+                        <p class="location">Greensboro City Park</p>
+                        <p class="desc">Give back to the community by helping us clean up our local parks.</p>
+                        <a href="#" class="btn-link">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="event-card">
+                    <img src="images/event4.jpg" alt="Resume writing workshop">
+                    <div class="card-content">
+                        <span class="category">Career</span>
+                        <h3>Resume Building Workshop</h3>
+                        <time datetime="2026-10-05T14:00">Oct 5, 2026 - 2:00 PM</time>
+                        <p class="location">Career Center</p>
+                        <p class="desc">Learn how to format your resume to catch the eye of top employers.</p>
+                        <a href="#" class="btn-link">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="event-card">
+                    <img src="images/event5.jpeg" alt="Basketball game">
+                    <div class="card-content">
+                        <span class="category">Athletics</span>
+                        <h3>UNCG Men's Basketball vs. Rivals</h3>
+                        <time datetime="2026-10-10T19:30">Oct 10, 2026 - 7:30 PM</time>
+                        <p class="location">University Arena</p>
+                        <p class="desc">Cheer on the Spartans as they take on our cross-state rivals in the season opener.</p>
+                        <a href="#" class="btn-link">View Details</a>
+                    </div>
+                </article>
             </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About the Student Engagement Office</h2>
+            <p>Our mission is to connect students with experiences that enrich their time at UNCG. Whether you are looking for professional development, entertainment, or community service, we have something for you.</p>
+            <p>By participating in campus activities, you gain access to:</p>
+            <ul>
+                <li>Networking opportunities with alumni and industry professionals.</li>
+                <li>Leadership development and resume-building experiences.</li>
+                <li>A vibrant, diverse community and lifelong friendships.</li>
+            </ul>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="footer-content">
-            <p>&copy; 2026 UNCG Student Engagement.</p>
-            <p>Contact us: <a href="mailto:events@uncg.edu">events@uncg.edu</a></p>
+            <p>&copy; 2026 University Student Engagement.</p>
+            <p>Contact us: <a href="mailto:events@unxg.edu">events@uncg.edu</a></p>
             <nav class="footer-nav">
                 <a href="#privacy">Privacy Policy</a>
                 <a href="#accessibility">Accessibility</a>
